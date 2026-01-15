@@ -615,11 +615,21 @@ section {
 
 .project-image {
     width: 100%;
-    height: 220px;
+    height: 250px;
     background: linear-gradient(135deg, var(--accent-color) 0%, #1d4ed8 100%);
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
 }
 
 .project-image::after {
@@ -633,6 +643,10 @@ section {
 }
 
 .project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-card:hover .project-img {
     transform: scale(1.05);
 }
 
