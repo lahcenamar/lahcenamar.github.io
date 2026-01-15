@@ -654,6 +654,31 @@ section {
     line-height: 1.8;
 }
 
+.project-category {
+    color: var(--accent-light);
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 10px !important;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.tech-tag {
+    display: inline-block;
+    background: rgba(59, 130, 246, 0.2);
+    color: var(--accent-light);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid var(--accent-color);
+}
+
 .project-link {
     display: inline-block;
     color: var(--accent-light);
